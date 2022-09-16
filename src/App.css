@@ -1,6 +1,7 @@
 .App {
   font-family: 'Signika Negative', sans-serif;
   background: #030713;
+  overflow-x: hidden;
 
 
   min-height: 100vh;
