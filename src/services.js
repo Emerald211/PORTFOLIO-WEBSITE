@@ -1,5 +1,6 @@
 import React from "react";
 import "./services.css";
+import resume from './EMMANUEL ADERIBIGBE (FRONTEND DEV).pdf'
 
 const Services = () => {
   return (
@@ -15,7 +16,9 @@ const Services = () => {
           lets make something special
               </h1>
               
-              <button  data-aos="fade-up" data-aos-duration="3000" className="bg-blue-900 text-white font-bold h-10 rounded-3xl w-32 mt-8">Download CV</button>
+        <a href={resume} download={resume}>
+        <button  data-aos="fade-up" data-aos-duration="3000" className="bg-blue-900 text-white font-bold h-10 rounded-3xl w-32 mt-8">Download CV</button>
+             </a>
       </div>
     </div>
   );
