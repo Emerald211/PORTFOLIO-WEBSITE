@@ -11,7 +11,7 @@ import Skills from "./skills";
 import Project from "./project";
 import { useState } from "react";
 import { useEffect } from "react";
-import {useNavigate} from 'react-router-dom'
+
 
 
 
@@ -19,7 +19,6 @@ import {useNavigate} from 'react-router-dom'
 function App() {
   const form = useRef();
 
-  let navigate = useNavigate()
 
   const ref = useRef(null)
 

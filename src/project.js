@@ -6,7 +6,7 @@ import music from "./MUSIC PLAYER.png";
 import joke from "./JOKE TELLER.png";
 import note from "./NOTE.png";
 import quote from "./QUOTE.png";
-import { useState } from "react";
+
 
 const Project = () => {
 
