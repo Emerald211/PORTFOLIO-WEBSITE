@@ -29,6 +29,8 @@ function App() {
   const [done, setdone] = useState(false)
 
   const sendEmail = (e) => {
+
+    const constform = document.querySelector(".contact-form")
     e.preventDefault();
 
     emailjs.sendForm('service_x1xb88n', 'template_vswwvhp', form.current, 'mESjxZ_og4PkWRGaA')
@@ -36,6 +38,9 @@ function App() {
         console.log(result.text);
 
         setdone(true)
+
+        constform.reset()
+        
       }, (error) => {
           console.log(error.text);
       });
@@ -86,7 +91,7 @@ function App() {
   
         </div>
         <div>
-          <form  ref={form} onSubmit={sendEmail} className=" text-white flex flex-col" action="">
+          <form  ref={form} onSubmit={sendEmail} className=" contact-form text-white flex flex-col" action="">
             <label className=" text-white mb-3" htmlFor="" >Name</label>
             <input name="user_name" className=" w-full h-12 rounded-3xl bg-none " required type="text" />
             <label className="text-white" htmlFor=""> Email</label>
