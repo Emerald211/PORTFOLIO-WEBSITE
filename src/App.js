@@ -68,7 +68,7 @@ function App() {
           }}  data-aos="fade-up" data-aos-duration="3000" className=" w-40 mt-5 py-2 hover:bg-none text-white rounded-3xl shadow-sm shadow-slate-700 bg-blue-900">Hire me</button>
 
           <div  data-aos="fade-up" data-aos-duration="3000" className="flex mt-12 text-5xl text-blue-900  gap-3">
-            <a href="https://www.linkedin.com/in/emmanuel-aderibigbe-1ab984235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKzvZ2VJKSZuF0vFES8mIDQ%3D%3D"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/emmanueladeribigbe01/"><FaLinkedin /></a>
             <a href="https://github.com/Emerald211"> <FaGithub /></a>
             <a href="https://www.instagram.com/emmanueladeribigbe01"> <FaInstagram /></a>
            
