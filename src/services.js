@@ -1,6 +1,6 @@
 import React from "react";
 import "./services.css";
-import resume from './EMMANUEL ADERIBIGBE (FRONTEND DEV).pdf'
+import resume from './EMMANUELADERIBIGBE(FRONTENDDEVELOPER)resume.docx'
 
 const Services = () => {
   return (

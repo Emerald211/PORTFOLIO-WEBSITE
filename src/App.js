@@ -1,6 +1,6 @@
 import "./App.css";
 import AOS from 'aos'
-
+import me from './Emma.png'
 import Navbar from "./navbar";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { useRef } from "react";
@@ -45,6 +45,8 @@ function App() {
           console.log(error.text);
       });
     
+    alert("Thanks for contacting me, I'll reach out soon")
+    
 
   };
 
@@ -76,8 +78,10 @@ function App() {
         </div>
 
         <div  data-aos="fade-up" data-aos-duration="3000" className=" px-3 flex relative md:mt-0 mt-12  justify-center">
-          <div className="circle bg-blue-900  md:w-72 absolute top-0 md:h-72 w-64 h-64 rounded-full"></div>
-          <div style={{ borderRadius: "0%" }} className=" rounded-full profile-bg  top-0 "></div>
+          <div className="circle bg-blue-900  md:w-72 relative top-0 md:h-72 w-100 h-100 rounded-full">
+              <img className=" rounded-full" width="100%" src={me} alt="" />
+          </div>
+         
         </div>
      
       </div>
@@ -98,7 +102,7 @@ function App() {
             <input name="user_email" className=" w-full h-12 rounded-3xl bg-none" required type="email" />
             <label className=" text-white mb-3" htmlFor="" >Message</label>
             <textarea name="message" id="" cols="30" rows="10" required></textarea>
-            <button className=" bg-blue-900 text-white w-full h-12 rounded-3xl mt-3" type="submit">{ done ? "Thanks for Contacting me" : "Send" }</button>
+            <button className=" bg-blue-900 text-white w-full h-12 rounded-3xl mt-3" type="submit">{ done ? "Message sent successfully" : "Send" }</button>
           </form>
         </div>
       </div>

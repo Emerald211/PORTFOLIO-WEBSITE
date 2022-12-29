@@ -1,7 +1,7 @@
 import React from "react";
 import "./skills.css";
 import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaGitSquare, FaGithub } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiFirebase, SiHeroku, SiTailwindcss } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -36,7 +36,15 @@ const Skills = () => {
       {
           logo: <FaGithub />,
           name: "Github"
-      }
+    },
+    {
+      logo: <SiFirebase />,
+      name: "Firebase"
+    },
+    {
+      logo: <SiHeroku />,
+      name: "Heroku"
+    }
       
 
   ];
