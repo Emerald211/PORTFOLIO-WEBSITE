@@ -72,7 +72,7 @@ const Project = () => {
         >
           <img className="w-1/2" src={game} alt="" />
           <div>
-            <h1 className=" text-3xl mt-3 text-white">EMERALD GAMES HUB</h1>
+            <h1 className=" text-3xl mt-3 text-white">EMERALD GAMING HUB</h1>
             <h3 className=" text-white">
               This is a gaming website with HTML CSS and JAVASCRIPT. This is a user friendly application. 
             </h3>
