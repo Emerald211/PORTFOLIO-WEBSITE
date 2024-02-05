@@ -50,7 +50,7 @@ const Home = () => {
           </p>
           <a
             className="btn py-4 px-16"
-            href="/src/assets/Emmanuel Aderibigbe - Frontend Developer resume.pdf"
+            href="/src/assets/Emmanuel Aderibigbe resume.pdf"
             download="Emmanuel Aderibigbe - Frontend Developer Resume"
           >
             DOWNLOAD CV
