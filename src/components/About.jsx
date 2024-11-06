@@ -31,7 +31,7 @@ const About = () => {
           className="md:w-1/2 my-8"
         >
           <h4 className="text-2xl font-bold mb-8">Get to know me!</h4>
-          <div className="md:w-10/12 text-lg text-[#666] mb-8">
+          <div className="md:w-10/12 text-md text-[#666] mb-8">
             <p className="mb-5">
               I'm a <strong>Frontend Software Developer</strong> with credible
               skills to providing successful technology solutions across

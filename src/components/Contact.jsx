@@ -32,7 +32,7 @@ const Contact = () => {
 
       );
 
-      alert("Thanks for contacting me, I'll reach out soon");
+      alert("Thanks for contacting me, Reach me via any of my social handles");
 
       resetField("name")
       resetField("email")

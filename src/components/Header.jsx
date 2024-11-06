@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import profileImg from '../assets/profile-pic.jpg'
+import profileImg from '../assets/emma.jpg'
 
 const Header = () => {
   let Links = [
@@ -22,7 +22,7 @@ const Header = () => {
         {/* logo section */}
         <div className="font-bold text-2xl tracking-wide cursor-pointer flex items-center gap-1">
             <img src={profileImg} alt="" className="md:w-12 md:h-12 rounded-full w-10 h-10"/>
-          <span className="text-primary text-xs md:text-3xl hover:text-secondary md:ml-3 ml-2">EMMANUEL ADERIBIGBE</span>
+          <span className="text-primary text-xs md:text-lg hover:text-secondary md:ml-3 ml-2">EMMANUEL ADERIBIGBE</span>
         </div>
         {/* Menu icon */}
         <div
@@ -38,7 +38,7 @@ const Header = () => {
           }`}
         >
           {Links.map((link) => (
-            <li className="md:ml-8 md:my-0 mt-5 font-semibold text-xl border-b-2 md:border-b-0 text-right px-7 md:px-4 pb-4 md:pb-0 cursor-pointer" key={link.name}>
+            <li className="md:ml-8 md:my-0 mt-5 font-semibold text-md border-b-2 md:border-b-0 text-right px-7 md:px-4 pb-4 md:pb-0 cursor-pointer" key={link.name}>
               <Link
                 to={link.link}
                 activeClass="active"

@@ -22,11 +22,19 @@ const Home = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="text-center md:w-1/2"
         >
-          <h1 className="text-primary text-5xl font-extrabold tracking-wider mb-8">
+          <h1 className="text-primary text-3xl font-extrabold tracking-wider mb-4 mt-12">
             HEY, I'M EMMANUEL ADERIBIGBE
           </h1>
+      
+          {/* hero info */}
+          <p className="text-light text-xl mb-8 ">
+            Frontend Software Developer with strong skillset in developing and
+            maintaining responsive websites while adhering to the latest web
+            development practices.
+          </p>
+
           <TypeAnimation
-            className="font-semibold text-transparent leading-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+            className="font-semibold  text-transparent leading-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
             sequence={[
               // Same substring at the start will only be typed once, initially
               "Building World Class Solutions, One Line of Code at a Time.",
@@ -39,22 +47,18 @@ const Home = () => {
               1000,
             ]}
             speed={50}
-            style={{ fontSize: "2em" }}
+            style={{ fontSize: "1em" }}
             repeat={Infinity}
           />
-          {/* hero info */}
-          <p className="text-light text-xl my-8">
-            Frontend Software Developer with strong skillset in developing and
-            maintaining responsive websites while adhering to the latest web
-            development practices.
-          </p>
+          <div>
           <a
             className="btn py-4 px-16"
-            href="/src/assets/Emmanuel Aderibigbe resume.pdf"
+            href="/src/assets/EMMANUEL ADERIBIGBE ( FRONTEND DEVELOPER) Resume.pdf"
             download="Emmanuel Aderibigbe - Frontend Developer Resume"
           >
             DOWNLOAD CV
           </a>
+      </div>
         </motion.div>
       </div>
       {/* hero socials */}
