@@ -1,17 +1,7 @@
 const projects = [
   // https://i.ibb.co/q1kCP1F/Screenshot-from-2024-10-29-12-08-34.png
-  
   {
 		id: 1,
-		name: 'GadgetTrac',
-		description:
-			'GadgetTrac is a cutting-edge Sales Management System that empowers businesses to efficiently track, manage, and optimize the entire sales lifecycle of gadgets. From inventory management to order processing and sales analytics, GadgetTrac provides real-time insights and seamless automation, streamlining operations and boosting sales performance. With its user-friendly interface and powerful features, GadgetTrac ensures businesses stay ahead in the fast-paced world of gadget sales.',
-		image: 'https://i.ibb.co/QrcptQp/Screenshot-from-2024-11-15-04-35-13.png',
-		link: 'https://gadgettrac.netlify.app',
-		github: 'https://github.com/Emerald211/Sales-Mangement-System',
-	},
-	{
-		id: 2,
 		name: 'Luxenexus | A Fashion Store',
 		description:
 			'Luxenexus is a robust platform designed to streamline and centralize all essential aspects of online store management. Built with modern technologies like React and TypeScript, it allows admins to efficiently manage products, track orders, oversee user accounts, and handle inventory in real time. The system includes features such as product catalog management, order processing, user role assignments, and analytics to provide insights into sales and customer behavior. Its component-based structure and use of TypeScript improve maintainability, scalability, and performance, ensuring a seamless and secure experience for store administrators.',
@@ -19,6 +9,16 @@ const projects = [
 		link: 'https://luxenexus.vercel.app',
 		github: 'https://github.com/Emerald211',
 	},
+  {
+		id: 2,
+		name: 'GadgetTrac',
+		description:
+			'GadgetTrac is a cutting-edge Sales Management System that empowers businesses to efficiently track, manage, and optimize the entire sales lifecycle of gadgets. From inventory management to order processing and sales analytics, GadgetTrac provides real-time insights and seamless automation, streamlining operations and boosting sales performance. With its user-friendly interface and powerful features, GadgetTrac ensures businesses stay ahead in the fast-paced world of gadget sales.',
+		image: 'https://i.ibb.co/QrcptQp/Screenshot-from-2024-11-15-04-35-13.png',
+		link: 'https://gadgettrac.netlify.app',
+		github: 'https://github.com/Emerald211/Sales-Mangement-System',
+	},
+
 	
 	{
 		id: 3,
@@ -40,7 +40,7 @@ const projects = [
 	},
 
 	{
-		id: 4,
+		id: 5,
 		name: 'JokeBotica',
 		description:
 			'JokeBotica is an engaging web application and fun project features a clever Joke-telling robot that delivers random jokes with a delightful twist. Through seamless text-to-speech integration, users can enjoy a lighthearted and entertaining experience as they listen to the jokes. JokeBotica aims to spread laughter and joy while demonstrating my skills in web development and audio integration.',
