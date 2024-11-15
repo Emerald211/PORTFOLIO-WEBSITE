@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import Header from './components/Header'
 import Home from './components/Home'
 import Projects from './components/Projects'
+import WorkExperience from './components/WorkExperience'
 import Footer from './shared/Footer'
 
 
@@ -15,7 +16,8 @@ function App() {
     <>
       <Header/>
       <Home/>
-      <About/>
+      <About />
+      <WorkExperience />
       <Projects/>
       <Contact/>
       <Footer/>

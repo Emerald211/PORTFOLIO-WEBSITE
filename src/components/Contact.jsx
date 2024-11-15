@@ -8,10 +8,12 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+ 
   const { register, handleSubmit, resetField } = useForm();
 
   const onSubmitHandler = async (data) => {
- 
+    window.open("https://wa.link/zg98q5", "_blank");
+
     emailjs.init("mESjxZ_og4PkWRGaA")
 
    
