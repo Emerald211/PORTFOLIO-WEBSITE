@@ -1,14 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/emma.jpg" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emmanuel Aderibigbe | Frontend Web Developer</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Emmanuel Aderibigbe | Frontend Software Developer (React, Next.js, TypeScript)</title>
+
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Portfolio of Emmanuel Aderibigbe, a Frontend Software Developer specializing in React, Next.js, TypeScript, and modern web technologies. Delivering scalable, high-performance web applications." />
+
+  <!-- Keywords (less important for Google, but some engines still use them) -->
+  <meta name="keywords"
+    content="Frontend Developer, React Developer, Next.js, TypeScript, JavaScript, Web Developer, Software Engineer, Portfolio, Nigeria" />
+
+  <!-- Author -->
+  <meta name="author" content="Emmanuel Aderibigbe" />
+
+  <!-- Open Graph (for LinkedIn, Facebook, WhatsApp previews) -->
+  <meta property="og:title" content="Emmanuel Aderibigbe | Frontend Software Developer" />
+  <meta property="og:description"
+    content="Delivering scalable, high-performance web applications using React, Next.js, and TypeScript." />
+  <meta property="og:image" content="./assets/photo_5951579355534706206_y.jpeg" />
+  <meta property="og:url" content="https://emmanueladeribigbe.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card (for Twitter/X previews) -->
+  <meta name="twitter:card" content="./assets/photo_5951579355534706206_y.jpeg" />
+  <meta name="twitter:title" content="Emmanuel Aderibigbe | Frontend Software Developer" />
+  <meta name="twitter:description"
+    content="Frontend Developer skilled in React, Next.js, and TypeScript. Explore my projects and experience." />
+  <meta name="twitter:image" content="./assets/photo_5951579355534706206_y.jpeg" />
+
+  <link rel="icon" href="./assets/photo_5951579355534706206_y.jpeg" type="image/x-icon" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="desktop-nav" data-aos="fade-down">
+    <div class="logo">Emmanuel Aderibigbe</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Emmanuel Aderibigbe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile" data-aos="fade-up">
+    <div class="section__pic-container">
+      <img src="./assets/photo_5951579355534706206_y.jpeg" alt="Profile picture" class="about-pic" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Emmanuel Aderibigbe</h1>
+      <p class="section__text__p2">Frontend Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('./assets/Emmanuel Aderibigbe(Frontend Engineer) resume.docx.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about" data-aos="fade-up">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/photo_5951579355534706206_y.jpeg" alt="Profile picture" class="about-pic" />
+      </div> -->
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br />Software Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree<br />ALX. Nano Degree SE</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m a Frontend Software Developer with proven expertise in creating modern web applications and seamless API
+            integrations. Passionate about delivering scalable, high-performance web applications that drive business
+            success across diverse industries.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience" data-aos="fade-up">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Work Experience</h1>
+
+    <div class="container-main">
+      <!-- Experience 1 -->
+      <div class="experience-item">
+        <div class="icon-container">
+          <i class="fas fa-ribbon"></i>
+        </div>
+        <div class="flex-grow">
+          <h3>StemBridge - Frontend Web Developer (Part Time)</h3>
+          <div class="experience-card">
+            <p class="date">June 2025 - Present</p>
+            <p>Responsible for designing, developing, and managing the company’s website. My role involved creating a
+              modern, responsive, and user-friendly platform while ensuring consistent performance, seamless updates,
+              and alignment with the company’s branding and business objectives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="experience-item">
+        <div class="icon-container">
+          <i class="fas fa-ribbon"></i>
+        </div>
+        <div class="flex-grow">
+          <h3>Taojaa - Frontend Developer (Full Time)</h3>
+          <div class="experience-card">
+            <p class="date">Dec 2024 - March 2025</p>
+            <p>At Taojaa, I worked as a Frontend Engineer, collaborating with the team to build a powerful custom
+              e-commerce website builder that simplified online store creation. I also contributed to the development of
+              multiple themes and landing pages, ensuring both functionality and engaging user experiences.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="icon-container">
+          <i class="fas fa-ribbon"></i>
+        </div>
+        <div class="flex-grow">
+          <h3>DevSue Technologies - Frontend Developer (Contract)</h3>
+          <div class="experience-card">
+            <p class="date">Aug 2024 - Nov 2024</p>
+            <p>At DevSue Technologies, I worked on a contract basis with the development team to deliver a complete
+              end-to-end e-commerce solution for a fashion brand. This involved overseeing the full development cycle,
+              from initial planning and design through to deployment, ensuring a functional, scalable, and visually
+              engaging online store.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="icon-container">
+          <i class="fas fa-ribbon"></i>
+        </div>
+        <div class="flex-grow">
+          <h3>STRUCAID NG - Frontend Developer (Contract)</h3>
+          <div class="experience-card">
+            <p class="date">OCT 2023 - MAR 2024</p>
+            <p>At STRUCAID NG, a growing startup in the construction industry, I collaborated with the team to build a
+              B2B platform designed for construction sales. Working in a fast-paced startup environment, I contributed
+              to developing a scalable solution that streamlined business transactions and improved the digital
+              experience for industry stakeholders</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="icon-container">
+          <i class="fas fa-ribbon"></i>
+        </div>
+        <div class="flex-grow">
+          <h3>Available</h3>
+          <div class="experience-card">
+
+            <p>Open to new roles or gigs</p>
+          </div>
+        </div>
+      </div>
+
+
+      <p class="section__text__p1" data-aos="fade-up">Explore My</p>
+      <h1 class="title" data-aos="fade-up">Tech Stacks</h1>
+
+      <div class="experience-details-container" data-aos="fade-up">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Next</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Wordpress</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects" data-aos="fade-up">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot from 2025-09-24 08-55-56.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">MARAYUMA MOTORS</h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://truckichi-soka.co.jp/wp/sales'">
+              Visit Website
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot from 2025-09-24 09-17-00.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">LIBRE COIN PARKING</h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://libre-parking.jp'">
+              Visit Website
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot from 2025-09-24 09-23-21.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">TAOJAA WEBSITE (ECOMMERCE)</h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://taojaa.com'">
+              Visit Website
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot from 2025-09-24 09-32-34.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">STEMBRIDGE</h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://stembrdg.org'">
+              Visit Website
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot from 2025-09-24 09-36-49.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">BEADSBYTRICIA</h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://beadsbytricia.vercel.app/'">
+              Visit Website
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot from 2025-09-24 09-41-10.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">L-MARKETING</h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://l-marketing-gamma.vercel.app'">
+              Visit Website
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact" data-aos="fade-up">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:aderibigbeemmanuel2004@gmail.com">aderibigbeemmanuel2004@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">Emmanuel Aderibigbe</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <i class="fab fa-whatsapp contact-icon" style="color: #080808; font-size: 25px; margin-left: 4px;"></i>
+        <p><a href="https://wa.me/2347064158452" target="_blank">+2347064158452</a></p>
+      </div>
+    </div>
+  </section>
+  <footer data-aos="fade-up">
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Emmanuel Aderibigbe. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 120,
+      once: true
+    });
+  </script>
+</body>
+
 </html>
