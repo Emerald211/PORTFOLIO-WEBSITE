@@ -51,9 +51,10 @@
 	.about-containers {
 		margin-top: 0;
 	}
+	
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 	#contact,
 	footer {
 		height: 40vh;
@@ -134,5 +135,17 @@
 
   .hamburger-icon{
     display: none;
+  }
+
+  .project-img{
+	width: auto;
+  }
+
+  .article-container{
+	justify-content: center !important;
+  }
+
+  .toleft{
+	justify-content: left !important;
   }
 }
