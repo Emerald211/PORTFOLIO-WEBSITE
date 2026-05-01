@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     tags: ["E-commerce", "React", "Node.js", "Payments"],
     role: "Lead Full-Stack",
     year: "2025",
-    demoUrl: "https://beadbytricia.com",
+    demoUrl: "https://beadsbytricia.com",
   },
   {
     id: "taojaa-builder",
